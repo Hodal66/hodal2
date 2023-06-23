@@ -9,22 +9,16 @@
     integrity="sha512-/9n7eNg3h9F4R15CNsIg0+Vuzy8mBOZy8UkS0xMNSzAjbX9EGq3f5ln3t4BYSvG9fr88/g+k0JWUhrNTd4ZD5A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./styles/homePageStyle.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400&family=Merriweather:wght@400;700&family=Nunito:wght@300;400&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <!-- <img src="./assets/logo.png" alt="my_logo"> -->
-    <svg width="80" height="80" viewBox="0 0 1024 683" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="3041.5" cy="341.5" r="341.5" fill="#2B55" />
-      <circle cx="682.5" cy="341.5" r="341.5" fill="url(#paint0_linear_75_413)" />
-      <defs>
-        <linearGradient id="paint0_linear_75_413" x1="682.5" y1="0" x2="682.5" y2="683" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#D179" />
-          <stop offset="1" stop-color="#A4A" stop-opacity="0" />
-        </linearGradient>
-      </defs>
-    </svg>
+    <img id="logo" src="./assets/logo.png" alt="my_logo">
     <nav>
       <ul>
         <li>Home</li>
@@ -34,28 +28,16 @@
         <li><button>Get In Touch</button></li>
       </ul>
     </nav>
-    <ion-icon name="logo-facebook"></ion-icon>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-0-square-fill"
-      viewBox="0 0 16 16">
-      <path
-        d="M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z" />
-      <path
-        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99Z" />
-    </svg>
-
   </header>
 
   <section id="heroAreaSection">
-    <div class="ImageContainer">
-      <img src="./assets/Images/HerroSectionImage.png" alt="">
-    </div>
     <div class="HelloContent">
       <div>
-        <h1>FRONT-END DEVELOPER</h1>
+        <h1 id="welcomeMessageH1">FRONT-END DEVELOPER</h1>
         <h1>Talk is cheap. Show me the code</h1>
         <p>I design and code beautifully simple things, and I love what I do.</p>
       </div>
-
+    
       <div>
         <button>Let’s Chart</button>
         <div id="Experince&projects">
@@ -80,6 +62,9 @@
         </div>
       </div>
 
+    </div>
+    <div class="ImageContainer">
+      <img src="./assets/Images/HerroSectionImage.png" alt="" class="helloImage">
     </div>
   </section>
   <section id="skills">
