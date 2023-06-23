@@ -6,6 +6,12 @@
     --green : #64F4AC;
     --gradient : linear-gradient(to top, #d4dfd9, white);
     --shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --radius:14px;
+    --header1:64px;
+    --header2:32px;
+    --pragraphColor:#B5B3B3;
+    --marginLeftAndRight:64px;
+    --paragraph2:#516783;
 } 
 *{
     max-width: 100%;
@@ -63,7 +69,7 @@ button {
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: var(--white);
   display: flex;
   font-family: Phantomsans, sans-serif;
   font-size: 20px;
@@ -117,16 +123,120 @@ nav > ul > li:hover{
     position: relative;
 
  }
+ .HelloContent{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+ }
+ .HelloContent > div{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+ }
 
 #welcomeMessageH1{
     background-color: var(--green);
     padding: 4px 8px;
     margin-top:128px;
+    letter-spacing: 15.52px;
+    display: block;
+    margin-right: 20px;
+    padding: 16px;
+    border-radius: var(--radius);
 
+}
+#letChartBtn{
+    width: 96px;
 }
 
 .ImageContainer{
     margin-top:128px;
+
    
 
 }
+.header1{
+    font-size: var(--header1);
+    color: var(--black);
+}
+p{
+    color: var(--pragraphColor);
+}
+
+#Experince_projects,#skills{
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    padding: 18px;
+    border-radius: var(--radius);
+    display: flex;
+    margin-right: 24px;
+    justify-content: space-between;
+}
+.Experince, .project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+
+/*===========================
+ Skills 
+ ===================================*/
+ #skills{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 64px 128px;
+}
+/*===========================
+myIntroduction
+ ===================================*/
+
+#myIntroduction{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 64px;
+    background-color: var(--white);
+    padding: 64px 24px 64px 64px;
+}
+
+#leftIntroContent{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+#rightIntroContent{
+    width: 700px;
+    display: flex;
+flex-direction: column;
+    gap: 24px;
+    /* margin-right: 64px; */
+    padding: 0px 64px;
+    
+}
+.introContentDiv {
+    display: flex;
+    box-shadow: var(--shadow);
+    padding: 24px;
+    border-radius: var(--radius);
+
+}
+
+.content{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+ .heading2{
+    font-size: var(--header2);
+ }
+
+ .paragraph2{
+    color:var(--paragraph2);
+ }
+ 
